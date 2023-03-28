@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="body">
+     
+    <h4 class="heading">LUDO GAME</h4>
+    
+ 
+    <div class="pattern">
+        <div id="red-house">
+            <div class="red-plug" id="red1-pos" onClick="RedPlug(this.id)"><div class="red-inner"></div></div>
+            <div class="red-plug" id="red2-pos" onClick="RedPlug(this.id)"><div class="red-inner"></div></div>
+            <div class="red-plug" id="red3-pos" onClick="RedPlug(this.id)"><div class="red-inner"></div></div>
+            <div class="red-plug" id="red4-pos" onClick="RedPlug(this.id)"><div class="red-inner"></div></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="Stop-blue"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes-blue"></div>
+            <div class="SmallBoxes-blue"></div>
+            <div class="SmallBoxes-blue"></div>
+            <div class="SmallBoxes-blue"></div>
+            <div class="SmallBoxes-blue"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes"></div>
+            <div class="Stop-blue"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+        </div>
+        <div id="blue-house">
+            <div class="blue-plug" id="blue1-pos" onClick="BluePlug(this.id)"><div class="blue-inner"></div></div>
+            <div class="blue-plug" id="blue2-pos" onClick="BluePlug(this.id)"><div class="blue-inner"></div></div>
+            <div class="blue-plug" id="blue3-pos" onClick="BluePlug(this.id)"><div class="blue-inner"></div></div>
+            <div class="blue-plug" id="blue4-pos" onClick="BluePlug(this.id)"><div class="blue-inner"></div></div>
+        </div>
+
+    </div>
+    <!------------------------------------------------------------------------>
+    <div class="pattern-second">
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="Stop-v-red"></div>
+            <div class="SmallBoxes-v-red"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-red"></div>
+            <div class="Stop-v-red"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-red"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-red"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-red"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="home"></div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="Stop-v-yellow"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+            <div class="SmallBoxes-v-yellow"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v"></div>
+            <div class="SmallBoxes-v"></div>
+        </div>
+    
+
+        <div class="dice" id="dice">
+            <div class="container" id="cont">
+                <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6" id="circle-1">1</div>
+                        <div class="col-lg-6 col-md-6 col-sm-6" id="circle-2">2</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6" id="circle-3">1</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" id="circle-4">2</div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6" id="circle-5">1</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" id="circle-6">2</div>
+            </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="pattern-third">
+        <div id="green-house">
+            <div class="green-plug" id="green1-pos" onClick="GreenPlug(this.id)"><div class="green-inner"></div></div>
+            <div class="green-plug" id="green2-pos" onClick="GreenPlug(this.id)"><div class="green-inner"></div></div>
+            <div class="green-plug" id="green3-pos" onClick="GreenPlug(this.id)"><div class="green-inner"></div></div>
+            <div class="green-plug" id="green4-pos" onClick="GreenPlug(this.id)"><div class="green-inner"></div></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="Stop-green"></div>
+            <div class="SmallBoxes"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes-green"></div>
+            <div class="SmallBoxes-green"></div>
+            <div class="SmallBoxes-green"></div>
+            <div class="SmallBoxes-green"></div>
+            <div class="SmallBoxes-green"></div>
+            <div class="SmallBoxes"></div>
+        </div>
+        <div class="pattern-row">
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+            <div class="Stop-green"></div>
+            <div class="SmallBoxes"></div>
+            <div class="SmallBoxes"></div>
+        </div>
+        <div id="yellow-house">
+            <div class="yellow-plug" id="yellow1-pos" onClick="YellowPlug(this.id)"><div class="yellow-inner"></div></div>
+            <div class="yellow-plug" id="yellow2-pos" onClick="YellowPlug(this.id)"><div class="yellow-inner"></div></div>
+            <div class="yellow-plug" id="yellow3-pos" onClick="YellowPlug(this.id)"><div class="yellow-inner"></div></div>
+            <div class="yellow-plug" id="yellow4-pos" onClick="YellowPlug(this.id)"><div class="yellow-inner"></div></div>
+        </div>
+        <div class="buttonholder">    
+            <h5 id="player-turn"> Player Turn </h5>    
+            <div id="button" onclick="startPlay()">START</div>
+        </div>        
+    </div>
+    
+
+    
+    <script rel="text/JavaScript" src="java.js"></script>
+    <script  href="js/bootstrap.js"></script>
+</html>

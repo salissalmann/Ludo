@@ -1,0 +1,720 @@
+.body
+{
+    background-color: rgb(53, 52, 52);
+    border: orange solid 5px;
+    height: 60vw;
+}
+
+
+.col-3
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: black solid 1px;
+    background-color: orange;
+    color: white;
+    font-size: 1vw;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.pattern
+{
+    display:flex; 
+    flex-direction: row;
+    margin-top: 1vw;
+    margin-left: 25vw;
+}
+
+#red-house
+{
+    display: relative;
+    background-color: rgb(247, 78, 78);
+    height: 18vw;
+    width: 18vw;
+}
+
+.pattern-row
+{
+    display:flex; 
+    flex-direction: column;
+}
+
+.SmallBoxes
+{
+    display: relative;
+    width: 4vw;
+    height: 3vw;
+    background-color: white;   
+    border: black solid 1px;
+}
+
+#blue-house
+{
+    display: relative;
+    background-color: rgb(71, 71, 224);
+    height: 18vw;
+    width: 18vw;
+}
+
+.pattern-second
+{
+    display:flex; 
+    flex-direction: row;
+    margin-left: 24.9vw;
+}
+
+.SmallBoxes-v
+{
+    display: relative;
+    width: 3.03vw;
+    height: 4vw;
+    background-color: white;   
+    border: black solid 1px;
+}
+
+.Stop-v-red
+{
+    display: relative;
+    width: 3.03vw;
+    height: 4vw;
+    background-color:  rgb(247, 78, 78);   
+    border: black solid 1px;
+}
+.Stop-v-yellow
+{
+    display: relative;
+    width: 3.03vw;
+    height: 4vw;
+    background-color:yellow;   
+    border: black solid 1px;
+}
+.Stop-blue
+{
+    display: relative;
+    width: 4vw;
+    height: 3vw;
+    background-color: rgb(71, 71, 224);   
+    border: black solid 2px;        
+}
+.Stop-green
+{
+    display: relative;
+    width: 4vw;
+    height: 3vw;
+    background-color:  rgb(139, 231, 0);   
+    border: black solid 2px;        
+}
+
+.SmallBoxes-v-red
+{
+    display: relative;
+    width: 3.03vw;
+    height: 4vw;
+    background-color:  rgb(247, 78, 78);   
+    border: black solid 1px;
+}
+.SmallBoxes-v-yellow
+{
+    display: relative;
+    width: 3.03vw;
+    height: 4vw;
+    background-color:  yellow;   
+    border: black solid 1px;  
+}
+.SmallBoxes-blue
+{
+    display: relative;
+    width: 4vw;
+    height: 3vw;
+    background-color: rgb(71, 71, 224);   
+    border: black solid 1px;    
+}
+.SmallBoxes-green
+{
+    display: relative;
+    width: 4vw;
+    height: 3vw;
+    background-color: rgb(139, 231, 0) ;   
+    border: black solid 1px;
+}
+
+
+.home
+{
+    display: relative;
+    width:11.8vw;
+    height: 12vw;
+    background-color: orange;
+    border: orange solid 1px;
+}
+
+.pattern-third
+{
+    display:flex; 
+    flex-direction: row;
+    margin-left: 24.9vw;
+}
+
+#green-house
+{
+    display: relative;
+    background-color: rgb(139, 231, 0);
+    height: 18vw;
+    width: 18vw;
+}
+#yellow-house
+{
+    display: relative;
+    background-color: yellow;
+    height: 18vw;
+    width: 18vw;
+}
+
+
+
+/*------------------------------------RED-PLUGS AND POSITIONS---------------------------*/
+.red-plug
+{
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    background-color: red;
+    border-radius:10%;
+    border: white solid 2px;
+    padding-top: 0.8vw;
+}
+
+.red-inner
+{
+    width: 1.25vw;
+    height: 1.25vw;
+    background-color: white;
+    padding-top: 1vw;
+    margin-left: 0.82vw;
+    border-radius: 10%;
+}
+
+#red1-pos
+{
+    margin-top:4vw;
+    margin-left:4vw;       
+    z-index: 1;
+}
+#red2-pos
+{
+    margin-top:4vw;
+    margin-left: 10vw;
+}
+#red3-pos
+{
+    margin-top:10vw;
+    margin-left: 10vw;
+}
+#red4-pos
+{
+    margin-top:10vw;
+    margin-left: 4vw;
+}
+
+
+/*------------------------------------BLUE-PLUGS AND POSITIONS---------------------------*/
+.blue-plug
+{
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    background-color: blue;
+    border-radius:10%;
+    border: white solid 2px;
+    padding-top: 0.8vw;
+}
+
+.blue-inner
+{
+    width: 1.25vw;
+    height: 1.25vw;
+    background-color: white;
+    padding-top: 1vw;
+    margin-left: 0.82vw;
+    border-radius: 10%;
+}
+
+#blue1-pos
+{
+    margin-top:4vw;
+    margin-left: 4vw;
+}
+#blue2-pos
+{
+    margin-top:4vw;
+    margin-left: 10vw;
+}
+#blue3-pos
+{
+    margin-top:10vw;
+    margin-left: 10vw;
+}
+#blue4-pos
+{
+    margin-top:10vw;
+    margin-left: 4vw;
+}
+
+/*------------------------------------GREEN-PLUGS AND POSITIONS---------------------------*/
+.green-plug
+{
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    background-color: rgb(126, 255, 126);
+    border-radius:10%;
+    border: white solid 2px;
+    padding-top: 0.8vw;
+}
+
+.green-inner
+{
+    width: 1.25vw;
+    height: 1.25vw;
+    background-color: white;
+    padding-top: 1vw;
+    margin-left: 0.82vw;
+    border-radius: 10%;
+}
+
+#green1-pos
+{
+    margin-top:4vw;
+    margin-left: 4vw;
+}
+#green2-pos
+{
+    margin-top:4vw;
+    margin-left: 10vw;
+}
+#green3-pos
+{
+    margin-top:10vw;
+    margin-left: 10vw;
+}
+#green4-pos
+{
+    margin-top:10vw;
+    margin-left: 4vw;
+}
+/*------------------------------------YELLOW-PLUGS AND POSITIONS---------------------------*/
+.yellow-plug
+{
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    background-color: rgb(255, 255, 107);
+    border-radius:10%;
+    border: white solid 2px;
+    padding-top: 0.8vw;
+}
+
+.yellow-inner
+{
+    width: 1.25vw;
+    height: 1.25vw;
+    background-color: white;
+    padding-top: 1vw;
+    margin-left: 0.82vw;
+    border-radius: 10%;
+}
+
+#yellow1-pos
+{
+    margin-top: 4vw;
+    margin-left: 4vw;
+}
+#yellow2-pos
+{
+    margin-top:4vw;
+    margin-left: 10vw;
+}
+#yellow3-pos
+{
+    margin-top:10vw;
+    margin-left: 10vw;
+}
+#yellow4-pos
+{
+    margin-top:10vw;
+    margin-left: 4vw;
+}
+.buttonholder
+{
+    display: relative;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 10%;
+    margin-left: 9vw;
+    margin-top: 2vw; 
+
+}
+
+.dice
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: white;   
+    border-radius: 10%;
+    border: black solid 2px;
+    margin-left: 9vw;
+    margin-top: 2vw; 
+}
+
+/*<div class="display-1"></div>*/
+.display-1
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    margin-top: 2.9vw;
+    margin-left: 2.8vw;
+    border-radius: 100%;
+}
+
+.dot
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+}
+
+
+#display-dot-2
+{
+    margin-bottom:1.25rem;
+}
+.display-2
+{
+    display: flex;
+    flex-direction: column;   
+    margin-left: 3rem;
+    margin-top: 1.2rem;
+    justify-content: space-evenly;
+}
+
+
+#display-dot-3
+{
+    margin-bottom:0.5rem;
+}
+
+
+.display-3
+{
+    display: flex;
+    flex-direction: column;   
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+
+.dot-4-1
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-top:0.3vw;
+    margin-left: 0.5vw;
+}
+
+.dot-4-2
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-left: 2rem;
+    margin-top:-0.2vw;
+ 
+}
+.dot-4-3
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-left: 3.5rem;
+    margin-top:-0.2vw;
+}
+.dot-4-4
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top:-0.2vw;
+ 
+}
+
+
+.dot-5-1
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    margin-top:1vw;
+    margin-left: 1vw;
+}
+
+.dot-5-2
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top:-2vw;
+ 
+}
+.dot-5-3
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    margin-left: 3rem;
+    margin-top:-0.2vw;
+}
+.dot-5-4
+{
+    display: absolute;
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    margin-left: 1vw;
+    margin-top:-0.2vw; 
+}
+.dot-5-5
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top:-1.8vw;
+ 
+}
+
+
+.dot-6-1
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 1rem;
+    margin-top: 0.7rem; 
+}
+
+.dot-6-2
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 5rem;
+    margin-top: -1.9rem; 
+}
+
+.dot-6-3
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem; 
+}
+
+.dot-6-4
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 5rem;
+    margin-top: -2rem; 
+}
+.dot-6-5
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem; 
+}
+
+.dot-6-6
+{
+    display: absolute;
+    background-color: black;
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    margin-right:2rem;
+    margin-left: 5rem;
+    margin-top: -2rem; 
+}
+
+#player-turn
+{
+    font-size: 1em;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+#button
+{
+    text-align: center;
+    margin-top: 2vw;
+    padding: 0.8vw 0.8vw 0.8vw 0.8vw;   
+    background-color: gold;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    border-radius: 5px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    box-shadow: 0px 2px 3px gold;
+    width: 100%;
+}
+#button:hover
+{
+    transform: scale(1.01);    
+}
+
+#Dice-Rolls
+{
+ background-color: white;   
+ display: flex;
+ justify-content: center;
+ margin-top: -2rem;
+ margin-bottom: 1rem;
+ border-radius: 1rem;
+ border: 2px solid white;
+}
+#Dice-1
+{
+    border: 1px solid white;
+    background-color: black;
+    color: white;    
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#Dice-2
+{
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: black;
+    color: white;    
+}
+#Dice-3
+{
+    border-radius: 1rem;
+
+    background-color: black;
+    padding: 1rem;
+    color: white;    
+    border: 1px solid white;
+
+}
+#circle-1
+{
+    background-color: black;
+    color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+#circle-2
+{
+    color: black;
+    background-color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+#circle-3
+{
+    background-color: black;
+    color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+#circle-4
+{
+    color: black;
+    background-color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+#circle-5
+{
+    background-color: black;
+    color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+#circle-6
+{
+    color: black;
+    background-color: black;
+    border-radius: 50rem;
+    width: 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.2rem;
+
+}
